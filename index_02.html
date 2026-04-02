@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested Table Example</title>
+</head>
+<body>
+
+<h2>Complex Nested Table</h2>
+
+<table border="2" cellpadding="10" cellspacing="0">
+    
+    <!-- Caption -->
+    <caption><b>Student Report Table</b></caption>
+
+    <!-- Table Header -->
+    <thead>
+        <tr>
+            <th rowspan="2">Student Info</th>
+            <th colspan="2">Subjects</th>
+            <th rowspan="2">Remarks</th>
+        </tr>
+        <tr>
+            <th>Math</th>
+            <th>Science</th>
+        </tr>
+    </thead>
+
+    <!-- Table Body -->
+    <tbody>
+        <tr>
+            <!-- Nested Table inside a cell -->
+            <td>
+                <table border="1" cellpadding="5">
+                    <tr>
+                        <th>Name</th>
+                        <td>John</td>
+                    </tr>
+                    <tr>
+                        <th>Age</th>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <th>Class</th>
+                        <td>10</td>
+                    </tr>
+                </table>
+            </td>
+
+            <td>85</td>
+            <td>90</td>
+            <td rowspan="2">Good Performance</td>
+        </tr>
+
+        <tr>
+            <td>
+                <table border="1" cellpadding="5">
+                    <tr>
+                        <th>Name</th>
+                        <td>Emma</td>
+                    </tr>
+                    <tr>
+                        <th>Age</th>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <th>Class</th>
+                        <td>10</td>
+                    </tr>
+                </table>
+            </td>
+
+            <td>88</td>
+            <td>92</td>
+        </tr>
+    </tbody>
+
+    <!-- Table Footer -->
+    <tfoot>
+        <tr>
+            <td colspan="4" align="center">
+                End of Report
+            </td>
+        </tr>
+    </tfoot>
+
+</table>
+
+</body>
+</html>

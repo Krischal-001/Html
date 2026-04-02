@@ -1,0 +1,278 @@
+<!DOCTYPE html>  
+<!-- Declares the document type as HTML5 -->
+
+<html lang="en">      
+<!-- Root element of the webpage, language set to English -->
+
+<head>
+    <meta charset="UTF-8">      
+    <!-- Defines character encoding (supports emojis, symbols, multiple languages) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+    <!-- Makes the site responsive on different devices (mobile, tablet, desktop) -->
+
+    <title>ST5007CEM Web Development</title>      
+    <!-- Title displayed on browser tab -->
+</head>
+
+<body>
+
+    <!-- ================= HEADER SECTION ================= -->
+    <header>
+        <h1>ST5007CEM Web Development</h1>
+        <!-- Main heading of the webpage -->
+
+        <nav>
+            <!-- Navigation bar with internal links -->
+            <a href="#links">Links</a> |  
+            <a href="#lists">Lists</a> |  
+            <a href="#table">Table</a> |  
+            <a href="#form">Form</a> |  
+            <a href="#media">Media</a> |  
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- ===== Introduction Section ===== -->
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <!-- Section heading -->
+
+            <p>This page demonstrates the basic HTML elements learned in class.</p>
+            <!-- Paragraph describing purpose -->
+
+            <p>It includes semantic structure, hyperlinks, images, lists, tables, forms, media, maps, and SVG graphics.</p>
+            <!-- Additional explanation -->
+        </section>
+
+        <!-- ===== Links and Images Section ===== -->
+        <section id="links">
+            <h2>Hyperlinks and Images</h2>
+
+            <!-- External link -->
+            <p><a href="https://example.com/module">Visit the module page</a></p>
+
+            <!-- Internal page link -->
+            <p><a href="about.html">Go to About Page</a></p>
+
+            <!-- Anchor link (scrolls within page) -->
+            <p><a href="#contact">Jump to Contact Section</a></p>
+
+            <!-- Email link -->
+            <p><a href="mailto:krischallamichhane001@example.com">Send an Email</a></p>
+
+            <!-- Image with caption -->
+            <figure>
+                <img src="https://www.shutterstock.com/image-photo/very-random-pose-asian-men-260nw-2423213779.jpg" 
+                     alt="This is an example image with alt text" 
+                     width="600">
+                <!-- Image element with alt text for accessibility -->
+
+                <figcaption>This is an example image with alt text.</figcaption>
+                <!-- Caption describing the image -->
+            </figure>
+        </section>
+
+        <!-- ===== Lists Section ===== -->
+        <section id="lists">
+            <h2>Lists</h2>
+
+            <h3>Steps to Make Salt Water</h3>
+
+            <!-- Ordered list (numbered steps) -->
+            <ol>
+                <li>
+                    Add water
+                    <!-- Nested unordered list -->
+                    <ul>
+                        <li>At 30 Celsius</li>
+                        <li>At 60 Celsius</li>
+                    </ul>
+                </li>
+                <li>Add salt</li>
+                <li>Mix properly</li>
+            </ol>
+
+            <h3>Technologies to Learn</h3>
+
+            <!-- Unordered list (bullet points) -->
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <!-- ===== Table Section ===== -->
+        <section id="table">
+            <h2>Table Example</h2>
+
+            <table border="1">
+                <!-- Table to display structured data -->
+
+                <caption>Student Roles</caption>
+                <!-- Title of the table -->
+
+                <thead>
+                    <!-- Table header -->
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- Table body -->
+                    <tr>
+                        <td>Alice</td>
+                        <td>Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>Designer</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Tester</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ===== Form Section ===== -->
+        <section id="form">
+            <h2>Form Example</h2>
+
+            <form>
+                <!-- Form for user input -->
+
+                <p>
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your name">
+                    <!-- Text input -->
+                </p>
+
+                <p>
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email">
+                    <!-- Email input with validation -->
+                </p>
+
+                <p>
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter password">
+                    <!-- Password input (hidden text) -->
+                </p>
+
+                <p>
+                    <label>Age</label>
+                    <input type="number">
+                    <!-- Numeric input -->
+                </p>
+
+                <p>
+                    <label>Gender</label>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <!-- Radio buttons (only one selectable) -->
+                </p>
+
+                <p>
+                    <label>Course</label>
+                    <select>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                    </select>
+                    <!-- Dropdown selection -->
+                </p>
+
+                <p>
+                    <label>Date of Birth</label>
+                    <input type="date">
+                    <!-- Date picker -->
+                </p>
+
+                <p>
+                    <label>Upload File</label>
+                    <input type="file">
+                    <!-- File upload -->
+                </p>
+
+                <p>
+                    <label>Website</label>
+                    <input type="url" placeholder="https://example.com">
+                    <!-- URL input -->
+                </p>
+
+                <p>
+                    <label>Phone</label>
+                    <input type="tel" placeholder="98**********">
+                    <!-- Telephone input -->
+                </p>
+
+                <p>
+                    <label>Satisfaction Level</label>
+                    <input type="range">
+                    <!-- Range slider -->
+                </p>
+            </form>
+        </section>
+
+        <!-- ===== Media Section ===== -->
+        <section id="media">
+            <h2>Audio</h2>
+
+            <audio controls>
+                <!-- Audio player -->
+                <source src="audio.mp3" type="audio/mpeg">
+            </audio>
+
+            <h2>Video</h2>
+
+            <video width="400" controls>
+                <!-- Video player -->
+                <source src="video.mp4" type="video/mp4">
+            </video>
+
+            <h2>Google Map</h2>
+
+            <!-- Embedded Google Map using iframe -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.0621430030063!2d85.395782!3d27.715366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1bb7d148e645%3A0x7d81a8b9f71f6e2b!2sNil%20Barahi%20Temple!5e0!3m2!1sen!2snp!4v1648820000000!5m2!1sen!2snp"
+                width="600"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </section>
+
+        <!-- ===== SVG Section ===== -->
+        <section id="svg">
+            <h2>SVG Circle</h2>
+
+            <!-- SVG graphic -->
+            <svg width="200" height="200">
+                <circle cx="100" cy="100" r="80" fill="red" />
+                <!-- Circle with center (100,100) and radius 80 -->
+            </svg>
+        </section>
+
+        <!-- ===== Contact Section ===== -->
+        <section id="contact">
+            <h2>Contact Section</h2>
+            <p>This is the contact section.</p>
+            <!-- Placeholder contact info -->
+        </section>
+
+    </main>
+
+</body>
+</html>
+
+
+
+
