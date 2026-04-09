@@ -7,3 +7,14 @@ background-color:aliceblue
 #new{
     background-color:rgb(68, 36, 131)
 }
+.padd   {
+    padding: 20px;
+    border: 2px solid black;
+}
+.marg   {
+    margin: 20px;
+    border: 2px solid black;
+}
+*{
+    box-sizing:border-box;
+}
